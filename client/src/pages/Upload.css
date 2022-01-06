@@ -1,0 +1,67 @@
+.upload {
+    padding: 10px;
+    padding-left: 20px;
+    min-height: 100vh;
+    background-color: rgb(239, 248, 255);
+}
+
+.upload__center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.upload__form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(220, 241, 247);
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    transition: .3s;
+}
+.upload__form:hover {
+  transform: scale(1.02);
+}
+.upload__form > label {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: rgb(3, 32, 49);
+}
+.upload__form > input {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    padding: 5px;
+    min-width: 300px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    border: 1px solid blue;
+    outline: none;
+    color: rgb(37, 37, 37);
+}
+.upload__form > textarea {
+    border-radius: 10px;
+    font-size: 1.1rem;
+    padding: 5px;
+    border: 1px solid blue;
+    outline: none;
+}
+.upload__form > div > button {
+    margin-top: 15px;
+    width: 25%;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    letter-spacing: 1.1px;
+    color: rgb(226, 226, 255);
+    background-color: rgb(16, 46, 73);
+    font-weight: bold;
+    outline: none;
+    border: 1px solid blue;
+}
+.upload__form > div {
+  text-align: center;
+}
