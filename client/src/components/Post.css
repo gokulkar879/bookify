@@ -1,0 +1,60 @@
+.post {
+    min-width: 350px;
+    width: 50%;
+    padding: 5px;
+    background-color: rgb(227, 242, 245);
+    border: 1px solid rgb(7, 94, 151);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 5%;
+}
+.post__header {
+    padding: 4px;
+    padding-left: 8px;
+}
+.post__header > p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: rgb(6, 36, 56);
+}
+.post__center {
+    margin-bottom: 8px;
+    padding: 1px 4px;
+}
+.post__author {
+    /* background-color: red; */
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(30, 32, 32);
+    letter-spacing: 2px;
+}
+.author__desc {
+   font-size: 1.1rem;
+   letter-spacing: 1px;
+   color: rgb(19, 44, 48);
+}
+.post__footer {
+  padding-left: 8px;
+}
+.post__footer > button {
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    color: rgb(10, 114, 114);
+    background: transparent;
+    outline: none;
+    border: none;
+}
+.post__footer > button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.post__footer > p{
+    display: inline-block;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    color: rgb(10, 114, 114);
+}
