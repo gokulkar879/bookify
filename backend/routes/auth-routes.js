@@ -1,9 +1,10 @@
 const router=require("express").Router();
-const passport=require("passport-google-oauth2");
+const passport=require("passport");
 const passportSetup=require("../config/passportConfig");
 
 router.get("/signin",(req,res)=>{
-    res.send("Signin-Page containing all options 1.Google 2.FB 3.Github 4.Twitter");
+    console.log("came here")
+    res.json({"message":"authenticated"});
     // link google signin button to /auth/google
 })
 
@@ -22,3 +23,6 @@ router.get("/google/redirect",(req,res)=>{
     res.redirect("/home");
 
 })
+
+
+module.exports = router

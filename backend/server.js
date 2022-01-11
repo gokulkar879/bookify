@@ -2,19 +2,23 @@ const { json } = require('express')
 const express = require('express')
 const mongoose = require('mongoose')
 const router = require('./routes.js')
+const passport = require('passport')
+const cors = require('cors')
 
 
 const app = express()
 app.use(json())
+app.use(cors())
 app.use('/server', router)
 
 mongoose.connect('mongodb://localhost/book', {
 })
 
 
-const authRoutes= require("./routes/auth-routes");
+const authRoutes = require("./routes/auth-routes");
 const cookieSession=require("cookie-session");
 const keys=require("./config/keys");
+// const passport = require('passport')
 
 // const app = express()
 
