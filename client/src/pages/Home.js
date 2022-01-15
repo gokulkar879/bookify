@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../components/Header'
 import Post from '../components/Post'
+import Sideprofile from '../components/Sideprofile'
 import { useBookContext } from '../context'
 import './Home.css'
 
@@ -25,7 +26,9 @@ function Home() {
                          })
                     }
                 </div>
-                <div className='home__right'></div>
+                <div className='home__right'>
+                    <Sideprofile />
+                </div>
             </div>
 
         </div>

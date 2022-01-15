@@ -2,7 +2,6 @@ const { json } = require('express')
 const express = require('express')
 const mongoose = require('mongoose')
 const router = require('./routes.js')
-const passport = require('passport')
 const cors = require('cors')
 
 
@@ -23,19 +22,22 @@ const keys=require("./config/keys");
 // const app = express()
 
 app.use(cookieSession({
-    maxAge:24*60*60*1000,
+    maxAge:5*60*1000,
     keys:[keys.cookieSession.cookieKey]
 }))
 
-app.use(passport.initialize());
-app.use(passport.session());
 
 
+app.set('view engine', 'pug')
 app.use('/auth', authRoutes);
 
 const db = mongoose.connection
 db.on('error', error=>console.log(error))
 db.once('open', ()=>console.log('connected to db'))
+
+app.get("/", (req, res) => {
+    res.render('index.pug')
+})
 
 app.listen(5000, () => {
     console.log("the app started at 5000 port")

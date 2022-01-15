@@ -9,7 +9,7 @@ const AppProvider = ({children}) => {
     const [data, setData] = useState([])
 
     useEffect(() => {
-       fetch('/server', {
+       fetch('http://localhost:5000/server', {
         headers : { 
             'Content-Type': 'application/json',
             'Accept': 'application/json'

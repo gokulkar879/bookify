@@ -12,38 +12,35 @@
     align-items: center;
 }
 
-.signin__center form {
+.signin__comp {
     min-width: 400px;
     min-height: 350px;
     width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(199, 202, 202);
+    background-color: rgb(219, 221, 221);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(82, 81, 81, 0.3);
 }
 
-.signin__center  form  img {
+.google_button {
+  font-weight: bold !important;
+  min-width: 300px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 8px !important;
+}
+.google_button span {
+    font-weight: bold !important;
+    font-size: 1.1rem;
+    color: rgb(65, 54, 56);
+}
+
+.signin__comp img {
     max-width: 150px;
     border-radius: 50%;
     margin: 50px 0;
-    box-shadow: 10px 10px 5px 5px rgb(5, 110, 170);
+    box-shadow: 10px 10px 0px 5px rgb(5, 110, 170);
 }
 
-.signin__center form button {
-    width: 80%;
-    padding: 10px;
-    font-size: 1.3rem;
-    letter-spacing: 1.5px;
-    border-radius: 10px;
-    outline: none;
-    border: 1px solid red;
-    color: rgb(216, 212, 212);
-    font-weight: bold;
-    background-color: rgb(185, 34, 34);
-    transition: .3s;
-}
-.signin__center form button:hover {
-    transform: scale(1.05);
-}

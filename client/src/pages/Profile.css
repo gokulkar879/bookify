@@ -1,0 +1,63 @@
+.profile {
+    padding: 10px;
+    min-height: 100vh;
+    background-color: rgb(239, 248, 255);
+}
+.profile__center {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+}
+.profile__left {
+    flex: .35;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:30px 10px;
+    justify-content: center;
+    background-color: rgb(214, 214, 214);
+    border-radius: 10px;
+}
+.profile__left img {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+.profile__left p {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: rgb(52, 53, 54);
+    font-weight: 500;
+    margin: 10px;
+}
+.profile__email {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: rgb(0, 55, 128) !important;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.profile__right {
+    flex: .6;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile__right button {
+    margin-top: 15px;
+    width: 25%;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    letter-spacing: 1.1px;
+    color: rgb(226, 226, 255);
+    background-color: rgb(16, 46, 73);
+    font-weight: bold;
+    outline: none;
+    border: 1px solid blue;
+}

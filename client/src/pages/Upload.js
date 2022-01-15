@@ -18,7 +18,7 @@ function Upload() {
         }
         // console.log(JSON.stringify(data))
         e.preventDefault()
-        fetch('/server', {
+        fetch('http://localhost:5000/server', {
             method: 'POST',
             headers : { 
               'Content-Type': 'application/json',

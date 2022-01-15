@@ -2,21 +2,30 @@
     min-width: 350px;
     width: 50%;
     padding: 5px;
-    background-color: rgb(227, 242, 245);
-    border: 1px solid rgb(7, 94, 151);
+    background-color: rgb(230, 231, 231);
+    border: 1px solid rgb(199, 199, 199);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     margin-bottom: 5%;
+    padding-left: 12px;
 }
 .post__header {
     padding: 4px;
-    padding-left: 8px;
+    display: flex;
+    align-items: center;
+
 }
 .post__header > p {
     font-size: 1.2rem;
     font-weight: 500;
     letter-spacing: 1.5px;
     color: rgb(6, 36, 56);
+    margin-left: 5%;
+}
+.post__header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 .post__center {
     margin-bottom: 8px;
@@ -33,10 +42,11 @@
 .author__desc {
    font-size: 1.1rem;
    letter-spacing: 1px;
+   padding: 2px;
    color: rgb(19, 44, 48);
 }
 .post__footer {
-  padding-left: 8px;
+
 }
 .post__footer > button {
     font-size: 1.2rem;

@@ -6,6 +6,7 @@ function Post({title, name, description}) {
     return (
         <div className='post'>
             <div className='post__header'>
+                <img src="https://cdn1.vectorstock.com/i/1000x1000/31/95/user-sign-icon-person-symbol-human-avatar-vector-12693195.jpg"></img>
                 <p>{title}</p>
             </div>
             <div className='post__center'>
