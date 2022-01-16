@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import './Sideprofile.css'
 
 function Sideprofile() {
+    console.log(localStorage.getItem('token'));
     return (
         <div className='sideProfile'>
             <div className='sideProfile__header'>

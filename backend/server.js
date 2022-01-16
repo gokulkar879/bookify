@@ -15,16 +15,16 @@ mongoose.connect('mongodb://localhost/book', {
 
 
 const authRoutes = require("./routes/auth-routes");
-const cookieSession=require("cookie-session");
+// const cookieSession=require("cookie-session");
 const keys=require("./config/keys");
 // const passport = require('passport')
 
 // const app = express()
 
-app.use(cookieSession({
-    maxAge:5*60*1000,
-    keys:[keys.cookieSession.cookieKey]
-}))
+// app.use(cookieSession({
+//     maxAge:5*60*1000,
+//     keys:[keys.cookieSession.cookieKey]
+// }))
 
 
 

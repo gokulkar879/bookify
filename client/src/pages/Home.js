@@ -7,6 +7,7 @@ import './Home.css'
 
 
 function Home() {
+    // console.log("token"+localStorage.getItem('token'));
     const { data } = useBookContext()
     return (
         <div className='home'>

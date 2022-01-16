@@ -13,14 +13,20 @@ function Signin() {
            let id = await response['googleId']
            let profile = await response['profileObj']
            console.log(id, profile)
-           fetch("http://localhost:5000/auth", {
+           const serverResponse = await fetch("http://localhost:5000/auth", {
                method: 'POST',
                headers: {'Content-Type': 'application/json'},
                body: JSON.stringify({"id": id, "data": profile})
-           }).then(res => res.json())
-           .then(res => {
-               console.log(res)
            })
+           
+           const data = await serverResponse.json();
+           console.log(data.user);
+           if(data.user){
+               localStorage.setItem('token',data.user);
+               history.push("/profile");
+            }else{
+                history.push("/");
+            }
         } catch (err) {
             setError('Sorry could not signin')
         }
